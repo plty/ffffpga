@@ -1,12 +1,12 @@
-current_dir := /app
-TOP := ${TOP}
-SOURCES := ${current_dir}/*.v
-XDC := ${current_dir}/${XDC}
+current_dir ?= /app
+TOP ?= top
+SOURCES ?= ${current_dir}/*.v
+XDC ?= ${current_dir}/pynq.xdc
 
-TARGET := ${TARGET}
-DEVICE := ${DEVICE}
-BITSTREAM_DEVICE := zynq7
-PARTNAME := xc7z020clg400-1
+TARGET ?= pynq-z2
+DEVICE ?= xc7z020_test
+BITSTREAM_DEVICE ?= zynq7
+PARTNAME ?= xc7z020clg400-1
 
 
 # common.mk

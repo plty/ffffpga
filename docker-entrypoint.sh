@@ -1,4 +1,3 @@
 #!/bin/bash
 
-conda activate xc7
-exec "$@"
+conda run --name xc7 --no-capture-output "$@"

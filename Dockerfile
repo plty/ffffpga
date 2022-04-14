@@ -20,4 +20,5 @@ ENV PATH "${INSTALL_DIR}/xc7/install/bin:/opt/conda/envs/xc7/bin/:${PATH}"
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
+RUN echo "conda activate xc7" >> /root/.bashrc
 CMD ["/bin/bash"]
