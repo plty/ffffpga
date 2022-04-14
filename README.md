@@ -6,5 +6,5 @@ with PYNQ-Z2 as the default.
 
 - [ ] code in chisel / clash-lang
 - [x] build by f4pga
-- [ ] flash via cli
+- [x] flash via cli
 - [ ] run alpine as base OS
